@@ -5,10 +5,22 @@ function pigLatinWord(word) {
 	 if(vowels.indexOf(firstletter) !== -1)  {
 	 	return word+'ay';
 	 }
+	 
 	 else {
-	 	return word.slice(1) + word.charAt(0) + 'ay';
+	 	var iterations = word.length;
+	 	//var i = 1;
+	 	for (var i = 1; i < iterations;   i++) {
+	 	var word = word.slice(i) + word.charAt(i-1) + 'ay';
+	 	var firstletter = word.charAt(0);
+	 	return word;
+		//	if(word.charAt(0) === vowels.indexOf(firstletter) {
+		//		return word;
+		//	}
+	 	}
+
+ 	//return word;
+
 	 }
 
 
 }
-
