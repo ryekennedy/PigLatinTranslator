@@ -3,8 +3,12 @@ function pigLatinWord(word) {
 	 var firstletter = word.charAt(0);
 	 
 	 if(vowels.indexOf(firstletter) !== -1)  {
-	 	return word = word+'ay';
+	 	return word+'ay';
 	 }
+	 else {
+	 	return word.slice(1) + word.charAt(0) + 'ay';
+	 }
+
 
 }
 
