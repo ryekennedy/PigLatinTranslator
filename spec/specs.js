@@ -5,5 +5,8 @@ describe('pigLatinWord', function() {
 	it('return words with one consonant beginning by moving first consonant to the end and adding ay to the end of contatination', function(){
 		pigLatinWord('jam').should.equal('amjay');
 	});
+	it('return words with two consonant beginning by moving first consonant to the end and adding ay to the end of contatination', function(){
+		pigLatinWord('bran').should.equal('anbray');
+	});
 
 });

@@ -10,12 +10,14 @@ function pigLatinWord(word) {
 	 	var iterations = word.length;
 	 	//var i = 1;
 	 	for (var i = 1; i < iterations;   i++) {
-	 	var word = word.slice(i) + word.charAt(i-1) + 'ay';
+	 	word = word.slice(1) + word.charAt(0);
 	 	var firstletter = word.charAt(0);
-	 	return word;
-		//	if(word.charAt(0) === vowels.indexOf(firstletter) {
-		//		return word;
-		//	}
+	 	//return word;
+		console.log(word);
+		if(vowels.indexOf(firstletter) !== -1) {
+		word = word+'ay';
+		return word;
+			}
 	 	}
 
  	//return word;
