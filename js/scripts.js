@@ -37,8 +37,22 @@ function pigLatinWord(word) {
 
 function  pigLatinSentence(sentence){
 	var sentenceArray = sentence.split(" ");
-	console.log(sentenceArray);
-	return sentenceArray;
+	//sentenceArrayLength = sentenceArray.length;
+	var pigSentence = sentenceArray;
+//debugger;
 
+	for(var i=0; i<sentenceArray.length; i++){
+		//tempElement = sentenceArray[i];          // didn't like tempElement in mocha??
+		//alert("got to after tempElement");
+		//var tempWord = pigLatinWord(tempElement);
+		
+		pigSentence[i] = pigLatinWord(sentenceArray[i]);
 
+		console.log(pigSentence);
+		
+
+		};
+pigSentence = pigSentence.join(" ");
+console.log(pigSentence);
+	return pigSentence;
 };

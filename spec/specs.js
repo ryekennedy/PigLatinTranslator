@@ -19,7 +19,7 @@ describe('pigLatinWord', function() {
 
 describe('pigLatinSentence', function() {
 	it('return a sentence into a split array', function(){
-		pigLatinSentence('This is a test sentence').should.deep.equal(["This", "is", "a", "test", "sentence"]);
+		pigLatinSentence('This is a test sentence').should.equal('isThay isay aay esttay entencesay');
 	});
 
 
