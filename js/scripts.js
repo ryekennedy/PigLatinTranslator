@@ -33,4 +33,12 @@ function pigLatinWord(word) {
 	 }
 
 
-}
+};
+
+function  pigLatinSentence(sentence){
+	var sentenceArray = sentence.split(" ");
+	console.log(sentenceArray);
+	return sentenceArray;
+
+
+};
