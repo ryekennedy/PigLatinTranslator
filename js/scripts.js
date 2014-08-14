@@ -1,3 +1,13 @@
+$(document).ready(function() {
+  $("#input form").submit(function(event) {
+    var inputSentence = $("#inputText").val();
+   
+    $("#output p").text(pigLatinSentence(inputSentence));
+
+    event.preventDefault();
+  });
+});
+
 function pigLatinWord(word) {
 	 var vowels = ['a', 'e','i', 'o','u'];
 	 var firstletter = word.charAt(0);
@@ -38,6 +48,7 @@ function pigLatinWord(word) {
 function  pigLatinSentence(sentence){
 	var sentenceArray = sentence.split(" ");
 	//sentenceArrayLength = sentenceArray.length;
+	//var pigSentence[];
 	var pigSentence = sentenceArray;
 //debugger;
 
